@@ -1,0 +1,26 @@
+{
+  "name": "boolean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renjithgr/boolean.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renjithgr/boolean/issues"
+  },
+  "homepage": "https://github.com/renjithgr/boolean#readme",
+  "dependencies": {
+    "konva": "^7.1.8"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
