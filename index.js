@@ -14,21 +14,36 @@ stage.add(layer);
 var box = new Konva.Rect({
     x: 50,
     y: 50,
-    width: 100,
+    width: 70,
     height: 50,
-    fill: '#00D2FF',
-    stroke: 'black',
-    strokeWidth: 4,
-    draggable: true
+    fill: 'green',
+    stroke: 'green',
+    strokeWidth: 1,
+    draggable: false
 });
-layer.add(box);
+
+var text = new Konva.Text({
+  x: 50,
+  y: 50,
+  text: 'AND',
+  fontSize: 15,
+  fontFamily: 'Calibri',
+  fill: 'black'
+});
+
+let group = new Konva.Group({
+  draggable: true
+});
+group.add(box, text);
+
+layer.add(group);
 
 layer.draw();
 
 // add cursor styling
-box.on('mouseover', function() {
+group.on('mouseover', function() {
     document.body.style.cursor = 'pointer';
 });
-box.on('mouseout', function() {
+group.on('mouseout', function() {
     document.body.style.cursor = 'default';
 });
